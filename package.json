@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build":"sass style.scss:style.css"
+    "build":"sass ./src/style.scss:./src/style.css"
   },
   "dependencies": {
     "sass": "^1.32.5"
