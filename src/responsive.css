@@ -1,0 +1,32 @@
+@media (max-width: 310px) {
+  main section .skill .html i {
+    width: 80px;
+  }
+  main section .skill .css i {
+    width: 80px;
+  }
+  main section .skill .js i {
+    width: 80px;
+  }
+  main section .contact .mail{
+    display: none;
+  }
+}
+@media (max-width: 400px){
+  header .nav {
+    width: 50px;
+    right: -50px;
+  }
+
+  header .nav li{
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  header .h-title {
+    font-size: 1rem;
+  }
+  main section h1 {
+    font-size: 2rem;
+  }
+}

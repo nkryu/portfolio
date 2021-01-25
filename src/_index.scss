@@ -1,0 +1,20 @@
+$white: #fff;
+$black:#000;
+
+//header-left & header-right
+@mixin header-items {
+  z-index: 10;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  
+}
+
+//skillクラスのiタグ
+@mixin skill-items {
+  width: 100px;
+  margin-bottom: 5px;
+}
