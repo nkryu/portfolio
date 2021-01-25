@@ -4,10 +4,12 @@
   const $nav = document.getElementById('js-nav');
   const $removeBtn = document.getElementById('js-remove')
 
+  //menuボタンクリックイベント
   $menuBtn.addEventListener('click',()=>{
     $nav.classList.add("in-nav");
     $menuBtn.classList.add("re-btn")
 
+    //閉じるボタンクリックイベント
     $removeBtn.addEventListener('click',(e)=>{
       e.preventDefault();
       $nav.classList.remove("in-nav");
@@ -16,7 +18,7 @@
   });
 });
 
-  //スクロールイベント
+  //画面スクロールイベント
   window.addEventListener('scroll',()=>{
     const $section = document.querySelectorAll('section');
     let scrollHeight = window.pageYOffset;

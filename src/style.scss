@@ -1,4 +1,6 @@
+// _index.scssの読み込み
 @import "index";
+
 *{
   margin: 0;
   padding: 0;
@@ -16,7 +18,7 @@ body {
 }
 
 header {
-  background-image: url(./img/_DQH0910_.jpg);
+  background-image: url('../img/_DQH0910_.jpg');
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -153,12 +155,4 @@ main {
   transition: all 2s;
 }
 
-.in-btn{
-  transform: scale(1);
-  transition: all 2s;
-}
 
-.re-nav{
-  transform: translateX(100%);
-  transition: all 2s;
-}

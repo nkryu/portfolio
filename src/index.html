@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sass読み込みファイル -->
     <link rel="stylesheet" href="style.css" />
+    <!-- レスポンシブファイル読み込み -->
     <link rel="stylesheet" href="responsive.css" />
+    <!-- fontawesome読み込み -->
     <link
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
+    <!-- fontfamilyリンクの読み込み -->
     <link
       href="https://fonts.googleapis.com/css?family=Anton"
       rel="stylesheet"
@@ -16,9 +20,11 @@
     <title>Kiryu</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <a href="#" class="h-left">Topへ戻る</a>
 
+      <!-- menu一覧 -->
       <nav class="nav" id="js-nav">
         <ul>
           <li><a href="#about">ABOUT ME</a></li>
@@ -28,7 +34,7 @@
         </ul>
       </nav>
 
-      
+      <!-- menuボタン -->
       <span class="h-right" id="js-menu">MENU</span>
       
 
@@ -36,10 +42,13 @@
         <h1>kiryu portfolio</h1>
       </div>
     </header>
+
+    <!-- main -->
     <main>
-      <section id="about">
+      <section>
         <h1>ABOUT ME</h1>
         <p>自己紹介</p>
+
         <div class="about">
           <div>
             <i class="fas fa-birthday-cake"></i> <br />
@@ -50,13 +59,14 @@
             神奈川県
           </div>
         </div>
+
         <p>
           公立高校卒業後フリーターとして飲食店アルバイト。2020年9月に独学でプログラミング勉強を開始し現在に至ります。<br />
           学生時代はサッカーに注力していました。趣味はプログラミング、kpo-pです。
         </p>
       </section>
 
-      <section id="skill">
+      <section>
         <h1>SKILL</h1>
         <p>スキル</p>
 
@@ -76,7 +86,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section>
         <h1>CONTACT</h1>
         <p>お問い合わせ</p>
         <div class="contact">
@@ -90,6 +100,8 @@
         お気軽に上記のメールアドレス・Twitterまでご連絡ください。
       </section>
     </main>
+
+    <!-- index.jsの読み込み -->
     <script src="index.js"></script>
   </body>
 </html>
