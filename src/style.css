@@ -114,6 +114,15 @@ main section .skill .js i {
   width: 100px;
   margin-bottom: 5px;
 }
+main section ul li {
+  list-style: none;
+}
+main section ul li a {
+  color: #fff;
+}
+main section ul li a:hover {
+  opacity: 0.8;
+}
 main section .contact {
   margin: 20px;
 }

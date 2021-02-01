@@ -32,6 +32,9 @@
     if(scrollHeight >= 1290){
       $section[2].classList.add("animation");
     }
+    if(scrollHeight >= 1900){
+      $section[3].classList.add("animation");
+    }
   });
 
     

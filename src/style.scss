@@ -107,6 +107,16 @@ main {
         @include skill-items();
       }
     }
+    ul li{
+      list-style: none;
+      a{
+        color:$white;
+        
+        &:hover{
+          opacity: 0.8;
+        }
+      } 
+    }
     .contact {
       margin: 20px;
       a {
