@@ -1,0 +1,168 @@
+// _index.scssの読み込み
+@import "index";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background:$black;
+  color: $white;
+  font-family: "Anton", sans-serif;
+  p {
+    font-weight: bold;
+  }
+}
+
+header {
+  background-image: url('../img/title.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+
+  .h-left {
+    @include header-items();
+    left: 20px;
+
+    text-decoration: none;
+    color: $white;
+  }
+  .h-right {
+    @include header-items();
+    right: 20px;
+
+    text-indent: 5px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .nav{
+    z-index: 10;
+    width: 110px;
+    text-align: center;
+    position: fixed;
+    right:-110px;
+    background-color: $black;
+    padding: 50px 0;
+    ul li{
+      list-style: none;
+      margin-top: 20px;
+      a{
+        text-decoration: none;
+        color: $white;
+      }
+    }
+    ul li:last-child{
+      margin-bottom: 20px;
+    }
+    
+  }
+
+  .h-title {
+    line-height: 500px;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+main {
+  section {
+    text-align: center;
+    border: 1px solid $white;
+    margin: 12rem 10px;
+    padding: 100px 10px;
+    letter-spacing: 3px;
+    visibility: hidden;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .about {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .skill {
+      margin: 20px auto 0;
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+
+      .html i {
+        color: orange;
+        @include skill-items();
+      }
+      .css i {
+        color: skyblue;
+        @include skill-items();
+      }
+      .js i {
+        color: yellow;
+        @include skill-items();
+      }
+    }
+    ul li{
+      list-style: none;
+      a{
+        color:$white;
+        
+        &:hover{
+          opacity: 0.8;
+        }
+      } 
+    }
+    .contact {
+      margin: 20px;
+      a {
+        color: $white;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .twitter {
+        color: rgb(27, 183, 245);
+        margin-right: 5px;
+      }
+      .mail {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// スクロールアニメーション
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(-4rem);
+  }
+}
+.animation {
+  visibility: visible;
+  animation: move 2s forwards;
+}
+
+
+//menuボタンクリックイベントスタイル
+.in-nav{
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+.re-btn{
+  transform: scale(0);
+  transition: all 2s;
+}
+
+
